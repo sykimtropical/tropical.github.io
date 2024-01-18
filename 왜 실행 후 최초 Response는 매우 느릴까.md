@@ -41,12 +41,12 @@ scheduler를 등록하여 주기적으로 API를 요청하여 깨우는 방법�
 비즈니스 로직 : api Request -> cmm request | table select > back request | table select > response
 ## 로컬환경
 
-적용 전
+적용 전<br>
 1. cmm : 380ms 
 2. back : 395ms 
 3. total response : 1043ms 
 <br>
-적용 후
+적용 후<br>
 1. cmm : 37ms
 2. back : 80ms
 3. total response : 152ms
