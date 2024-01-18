@@ -1,7 +1,7 @@
 # Setup
-title: Not Pure Poole
-description: A simple, beautiful, and powerful Jekyll theme for blogs
-url: https://vszhub.github.io
+title: 기록하기
+description: 성장과정을 기록하기 위한 블로그입니다.
+url: https://sykimtropical.github.io
 avatar: /avatar.jpeg
 paginate: 5
 permalink: pretty
@@ -29,14 +29,13 @@ exclude:
 
 # Optimize Jekyl SEO Tag
 twitter:
-  username: vszhub
+  username: sykimtropical
   card: summary
 logo: logo.png
 social:
-  name: Songzi Vong
+  name: 김서영
   links:
-    - https://twitter.com/vszhub
-    - https://github.com/vszhub
+    - https://github.com/sykimtropical
 google_site_verification: xxxxx
 lang: en
 
@@ -54,6 +53,6 @@ sass:
 
 # Specify the author for blog posts
 author:
-  name: Songzi Vong
-  url: https://github.com/vszhub/
-  email: vszhub@gmail.com
+  name: 김서영
+  url: https://github.com/sykimtropical
+  email: tropical_789@naver.com
