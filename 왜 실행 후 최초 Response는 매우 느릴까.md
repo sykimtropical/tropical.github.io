@@ -2,9 +2,11 @@
 > 💡키워드 <br>
 > • Spring boot Warm up<br>
 > • cold start
-
+<br><br>
 # 현상
 Tomcat, Spring Boot 등의 어플리케이션을 실행 후 최초로 REST API 요청 시 Response Time의 딜레이가 많이 긴것을 확인할 수 있다.
+
+<br><br>
 
 # 이유
 JVM 프로세스가 지연로딩 방식을 기반으로 하기 때문에 최초의 한번 요청할때 로드되는 과정 때문에 지연시간이 발생한다.
