@@ -47,9 +47,9 @@ scheduler를 등록하여 주기적으로 API를 요청하여 깨우는 방법�
 3. total response : 1043ms 
 <br>
 적용 후<br>
-1. cmm : 37ms<br>
-2. back : 80ms<br>
-3. total response : 152ms<br>
+1. cmm : 37ms
+2. back : 80ms
+3. total response : 152ms
 
 <br>
 <br>
