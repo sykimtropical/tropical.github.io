@@ -28,9 +28,6 @@ exclude:
   - not-pure-poole.gemspec
 
 # Optimize Jekyl SEO Tag
-twitter:
-  username: sykimtropical
-  card: summary
 logo: logo.png
 social:
   name: 김서영
