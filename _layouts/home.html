@@ -4,42 +4,43 @@ layout: default
 
 {% include home-header.html %}
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <section class="post-entry">
-    <h2 class="post-title">
-      <a href="{{ post.url | relative_url }}">
-        {{ post.title }}
+<h1>{{ page.title }}</h1>
+
+{%- assign taxonomies = site.posts | group_by_exp: "post", "post.date | date: '%Y'" -%}
+
+<div class="taxonomies-wrapper">
+  <ul class="taxonomies">
+    {%- for taxonomy in taxonomies -%}
+    <li>
+      {%- capture link -%}{{ page.permalink }}#{{ taxonomy.name }}{%- endcapture -%}
+      <a class="taxonomy" href="{{ link | relative_url }}">
+        <span>{{ taxonomy.name }}</span>
+        <span class="taxonomy-count">{{ taxonomy.size }}</span>
       </a>
-    </h2>
-
-    <div class="post-meta">
-      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
-      {%- if jekyll.environment == "production" and site.disqus -%}
-        <span> • </span>
-        <a class="comment-count" href="{{ post.url | relative_url }}#disqus_thread">
-          <span class="disqus-comment-count" data-disqus-url="{{ post.url | absolute_url }}"></span>
-        </a>
-      {%- endif -%}
-    </div>
-
-    <p>{{ post.excerpt | strip_html }}</p>
-  </section>
-  {% endfor %}
-  {%- if jekyll.environment == "production" and site.disqus -%}
-    <script id="dsq-count-scr" src="//{{ site.disqus }}.disqus.com/count.js" async></script>
-  {%- endif -%}
+    </li>
+    {%- endfor -%}
+  </ul>
 </div>
 
-<!--<div class="pagination">-->
-<!--  {% if paginator.next_page %}-->
-<!--    <a class="pagination-item older" href="{{ paginator.next_page_path | relative_url }}">Older</a>-->
-<!--  {% else %}-->
-<!--    <span class="pagination-item older">Older</span>-->
-<!--  {% endif %}-->
-<!--  {% if paginator.previous_page %}-->
-<!--    <a class="pagination-item newer" href="{{ paginator.previous_page_path | prepend: relative_url }}">Newer</a>-->
-<!--  {% else %}-->
-<!--    <span class="pagination-item newer">Newer</span>-->
-<!--  {% endif %}-->
-<!--</div>-->
+{% comment %} Show posts by taxonomy {% endcomment %}
+{%- for taxonomy in taxonomies -%}
+<h2 id="{{ taxonomy.name }}">
+  {{ taxonomy.name }}
+</h2>
+<ul class="post-list-by-taxonomy">
+  {%- assign posts = taxonomy.items -%}
+  {%- for post in posts -%}
+  <li>
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time> &raquo; <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+  </li>
+  {%- endfor -%}
+</ul>
+<a href="#" onclick="backToTop()" class="back-to-top">Top &#8648;</a>
+{%- endfor -%}
+
+<script>
+  function backToTop() {
+    const main = document.getElementById("site-main");
+    main.scrollTop = 0;
+  }
+</script>
