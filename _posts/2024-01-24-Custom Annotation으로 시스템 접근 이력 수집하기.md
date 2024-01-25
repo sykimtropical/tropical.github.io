@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "Custom Annotaion으로 시스템 접근이력 수집하기"
+date:   2024-01-24 11:00:00 +0900
+tags: [customannotaion, AOP]
+---
 
 >사용자가 웹사이트에서 어떤 동작을 요청하였는지 로그를 수집하고 싶었다.<br>
 >AOP 또는 Filter에서 어떤 클래스, 메서드를 실행하였는지 일일이 확인하여 텍스트로 변환 하는 건 너무 번잡해 보여<br>
