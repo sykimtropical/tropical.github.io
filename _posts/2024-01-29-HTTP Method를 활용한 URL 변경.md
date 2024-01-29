@@ -4,6 +4,8 @@ title:  "HTTP Method를 활용한 URL 변경"
 date:   2024-01-29 11:00:00 +0900
 tags: [HTTPMethod,RESTful,HTTP]
 ---
+<br>
+
 >기존 URL은 행위가 포함되어 있었다. (Restful URL 규칙 위반)<br>
 >ex) /000ResultList.do , /000ResultDetail.do /000Send.do...<br>
 >URL 길이를 줄이고, HTTP 메서드를 적극 활용하여 URL에서 행위에 대한 내용을 삭제하고자<br>
