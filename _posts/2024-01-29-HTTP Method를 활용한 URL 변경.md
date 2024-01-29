@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "HTTP Method를 활용한 URL 변경"
-date:   2024-01-29 00:00:00 +0900
+date:   2024-01-29 01:00:00 +0900
 tags: [HTTPMethod,RESTful,HTTP]
 ---
 <br>
