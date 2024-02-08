@@ -100,27 +100,27 @@ public class ManagementContextCustomization {
 <br>
 어떤 설정을 읽는지 확인했으니 `UndertowServletWebServerFactory` 를 설정해보자.<br>
 <br>
-[UndertowServletWebServerFactory Spring boot 공식 문서](https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/web/embedded/undertow/UndertowServletWebServerFactory.html)
-<br>
+
+[UndertowServletWebServerFactory Spring boot 공식 문서](https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/web/embedded/undertow/UndertowServletWebServerFactory.html) <br>
+
 번역)<br>
 UndertowServletWebServers를 만드는 데 사용할 수 있는 ServletWebServerFactory입니다.<br>
 명시적으로 다르게 구성되지 않는 한, 공장은 포트 8080에서 HTTP 요청을 수신하는 서버를 생성합니다.<br>
 <br>
 아래 매서드 중 `addDeploymentInfoCustomizers(UndertowDeploymentInfoCustomizer... customizers)`  를 확인<br>
 <br>
-`UndertowDeploymentInfoCustomizer` Spring boot 공식 문서<br>
-https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/web/embedded/undertow/UndertowDeploymentInfoCustomizer.html <br>
+[UndertowDeploymentInfoCustomizer Spring boot 공식 문서](https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/web/embedded/undertow/UndertowDeploymentInfoCustomizer.html) <br>
 번역)<br>
 Undertow `DeploymentInfo`를 사용자 정의하는 데 사용할 수 있는 콜백 인터페이스입니다.<br>
 <br>
 `DeploymentInfo` 객체는?<br>
 배포에 관련된 정보를 담는 객체<br>
 <br>
-요청 처리 체인에 추가적인 로직을 적용하기 위한 인터페이스 HandlerWrapper 적용하기 (Undertow 공식문서)<br>
-https://undertow.io/undertow-docs/undertow-docs-2.1.0/index.html#handler-chain-wrappers <br>
+요청 처리 체인에 추가적인 로직을 적용하기 위한 인터페이스 HandlerWrapper 적용하기 <br>
+[Undertow 공식문서] (https://undertow.io/undertow-docs/undertow-docs-2.1.0/index.html#handler-chain-wrappers) <br>
 <br>
-핸들러 구성하기 (Undertow 공식문서)<br>
-https://undertow.io/undertow-docs/undertow-docs-2.1.0/index.html#built-in-handlers-2 <br>
+핸들러 구성하기 <br>
+[Undertow 공식문서] (https://undertow.io/undertow-docs/undertow-docs-2.1.0/index.html#built-in-handlers-2) <br>
 <br>
 <br>
 여기서 `Allowed Methods` 객체를 이용하여 허용할 메소드 항목을 지정하고 `addInitialHandlerChainWrapper` 를 통해 핸들러를 추가한다.<br>
