@@ -100,9 +100,8 @@ public class ManagementContextCustomization {
 <br>
 어떤 설정을 읽는지 확인했으니 `UndertowServletWebServerFactory` 를 설정해보자.<br>
 <br>
-`UndertowServletWebServerFactory` Spring boot 공식 문서<br>
-
-https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/web/embedded/undertow/UndertowServletWebServerFactory.html <br>
+[UndertowServletWebServerFactory Spring boot 공식 문서](https://docs.spring.io/spring-boot/docs/current/api/org/springframework/boot/web/embedded/undertow/UndertowServletWebServerFactory.html)
+<br>
 번역)<br>
 UndertowServletWebServers를 만드는 데 사용할 수 있는 ServletWebServerFactory입니다.<br>
 명시적으로 다르게 구성되지 않는 한, 공장은 포트 8080에서 HTTP 요청을 수신하는 서버를 생성합니다.<br>
