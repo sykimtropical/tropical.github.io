@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Spring Boot3 & Undertow 에서 HTTP Method 제한하기"
-date:   2024-02-08 11:00:00 +0900
+date:   2024-02-08 10:00:00 +0900
 tags: [SpringBoot,Undertow,내장WAS]
 ---
 >모의침투 결과 불필요한 HTTP Method가 허용되어 있어 이에 대한 조치가 필요했다.
