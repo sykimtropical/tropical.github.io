@@ -17,6 +17,7 @@ pre {
   margin-top: 0;
   margin-bottom: var(--spacer-3);
   overflow: auto;
+  background-color: #f8f8f8;
 }
 
 .highlight {
@@ -55,8 +56,4 @@ pre {
 // Gist via GitHub Pages
 .gist .markdown-body {
   padding: 15px !important;
-}
-.language-cmd {
-  color: #282828;
-  background-color: #f8f8f8;
 }
