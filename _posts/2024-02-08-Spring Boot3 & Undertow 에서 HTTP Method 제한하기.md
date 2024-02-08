@@ -117,10 +117,10 @@ Undertow `DeploymentInfo`를 사용자 정의하는 데 사용할 수 있는 콜
 배포에 관련된 정보를 담는 객체<br>
 <br>
 요청 처리 체인에 추가적인 로직을 적용하기 위한 인터페이스 HandlerWrapper 적용하기 <br>
-[Undertow 공식문서] (https://undertow.io/undertow-docs/undertow-docs-2.1.0/index.html#handler-chain-wrappers) <br>
+[Undertow 공식문서](https://undertow.io/undertow-docs/undertow-docs-2.1.0/index.html#handler-chain-wrappers) <br>
 <br>
 핸들러 구성하기 <br>
-[Undertow 공식문서] (https://undertow.io/undertow-docs/undertow-docs-2.1.0/index.html#built-in-handlers-2) <br>
+[Undertow 공식문서](https://undertow.io/undertow-docs/undertow-docs-2.1.0/index.html#built-in-handlers-2) <br>
 <br>
 <br>
 여기서 `Allowed Methods` 객체를 이용하여 허용할 메소드 항목을 지정하고 `addInitialHandlerChainWrapper` 를 통해 핸들러를 추가한다.<br>
