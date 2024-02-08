@@ -4,8 +4,8 @@ title:  "Spring Boot3 & Undertow 에서 HTTP Method 제한하기"
 date:   2024-02-08 10:00:00 +0900
 tags: [SpringBoot,Undertow,내장WAS]
 ---
->모의침투 결과 불필요한 HTTP Method가 허용되어 있어 이에 대한 조치가 필요했다.
->보통 WEB이나 WAS 설정파일을 건드려 제한 할 수 있으나,
+>모의침투 결과 불필요한 HTTP Method가 허용되어 있어 이에 대한 조치가 필요했다.<br>
+>보통 WEB이나 WAS 설정파일을 건드려 제한 할 수 있으나,<br>
 >Spring Boot로 내장 WAS 를 사용중이며, Undertow를 사용중에 있어 이 환경의 설정을 처리하고 기록했다.
 
 <br><br>
