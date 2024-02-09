@@ -3,6 +3,10 @@ layout: post
 title:  "HTTP Method를 활용한 URL 변경"
 date:   2024-01-29 11:00:00 +0900
 tags: [HTTPMethod,RESTful,HTTP]
+lastmod : 2024-01-29 11:00:00 +0900
+sitemap :
+  changefreq : daily
+  priority : 1.0
 ---
 <br>
 
