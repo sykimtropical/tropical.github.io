@@ -3,6 +3,10 @@ layout: post
 title:  "Custom Annotaion으로 시스템 접근이력 수집하기"
 date:   2024-01-24 11:00:00 +0900
 tags: [customannotaion, AOP]
+lastmod : 2024-01-24 11:00:00 +0900
+sitemap :
+  changefreq : daily
+  priority : 1.0
 ---
 
 >사용자가 웹사이트에서 어떤 동작을 요청하였는지 로그를 수집하고 싶었다.<br>
