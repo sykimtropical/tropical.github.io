@@ -1,7 +1,7 @@
 # Setup
 title: 개발일지
 description: 공부, 고민 내용을 작성하기 위한 개인 블로그입니다.
-url: https://sykimtropical.github.io/blog
+url: https://sykimtropical.github.io
 avatar: /avatar.jpeg
 paginate: 5
 permalink: pretty
